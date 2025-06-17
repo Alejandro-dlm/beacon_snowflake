@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Llamada para Account Manager - {{account_name}}</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #e74c3c; padding-bottom: 10px;">
+            Resumen para Account Manager - {{account_name}}
+        </h2>
+        
+        <div style="background-color: #fdf2e9; padding: 15px; border-radius: 5px; margin: 20px 0; border-left: 4px solid #e67e22;">
+            <h3 style="margin-top: 0; color: #d35400;">Información del Cliente</h3>
+            <p><strong>Cuenta:</strong> {{account_name}} (#{{account_number}})</p>
+            <p><strong>Participante:</strong> {{speaker_name}} ({{speaker_email}})</p>
+            <p><strong>CS Asignado:</strong> {{cs_email}}</p>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <h3 style="color: #d35400;">Resumen Ejecutivo de la Llamada</h3>
+            <div style="background-color: #fff; border-left: 4px solid #e74c3c; padding: 15px; margin: 10px 0;">
+                {{summary}}
+            </div>
+        </div>
+        
+        <div style="background-color: #e8f5e8; padding: 15px; border-radius: 5px; margin: 20px 0;">
+            <h3 style="margin-top: 0; color: #27ae60;">Acciones Sugeridas para AM</h3>
+            <ul style="margin: 10px 0;">
+                <li>Revisar los puntos clave identificados en el resumen</li>
+                <li>Evaluar oportunidades de upselling o cross-selling mencionadas</li>
+                <li>Coordinar con CS si se requieren acciones específicas</li>
+                <li>Programar follow-up si es necesario</li>
+            </ul>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <h3 style="color: #d35400;">Documentos de Referencia</h3>
+            <p>
+                <a href="{{call_doc_url}}" style="color: #e74c3c; text-decoration: none; font-weight: bold;">
+                    📄 Resumen Actual de la Llamada
+                </a>
+            </p>
+            <p>
+                <a href="{{log_doc_url}}" style="color: #e74c3c; text-decoration: none; font-weight: bold;">
+                    📋 Historial Completo de Resúmenes
+                </a>
+            </p>
+        </div>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #bdc3c7; font-size: 12px; color: #7f8c8d;">
+            <p>Este correo fue generado automáticamente por el sistema de análisis de llamadas.</p>
+            <p>Para consultas específicas sobre el cliente, contacta directamente al CS asignado: {{cs_email}}</p>
+        </div>
+    </div>
+</body>
+</html>

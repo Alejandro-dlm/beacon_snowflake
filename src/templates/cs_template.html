@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Llamada - {{account_name}}</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+        <h2 style="color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px;">
+            Resumen de Llamada - {{account_name}}
+        </h2>
+        
+        <div style="background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin: 20px 0;">
+            <h3 style="margin-top: 0; color: #34495e;">Información del Cliente</h3>
+            <p><strong>Cuenta:</strong> {{account_name}} (#{{account_number}})</p>
+            <p><strong>Participante:</strong> {{speaker_name}} ({{speaker_email}})</p>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <h3 style="color: #34495e;">Resumen de la Llamada</h3>
+            <div style="background-color: #fff; border-left: 4px solid #3498db; padding: 15px; margin: 10px 0;">
+                {{summary}}
+            </div>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <h3 style="color: #34495e;">Documentos de Referencia</h3>
+            <p>
+                <a href="{{call_doc_url}}" style="color: #3498db; text-decoration: none; font-weight: bold;">
+                    📄 Resumen Actual de la Llamada
+                </a>
+            </p>
+            <p>
+                <a href="{{log_doc_url}}" style="color: #3498db; text-decoration: none; font-weight: bold;">
+                    📋 Historial de Resúmenes
+                </a>
+            </p>
+        </div>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #bdc3c7; font-size: 12px; color: #7f8c8d;">
+            <p>Este correo fue generado automáticamente por el sistema de análisis de llamadas.</p>
+            <p>Si tienes alguna pregunta, por favor contacta al equipo correspondiente.</p>
+        </div>
+    </div>
+</body>
+</html>
