@@ -49,11 +49,11 @@ Sistema automatizado para procesar transcripts de Gong que incluye:
 ```bash
 # Snowflake
 SNOWFLAKE_USER=your_username
-SNOWFLAKE_PASSWORD=your_password
 SNOWFLAKE_ACCOUNT=your_account
 SNOWFLAKE_WAREHOUSE=your_warehouse
 SNOWFLAKE_DATABASE=your_database
 SNOWFLAKE_SCHEMA=your_schema
+SNOWFLAKE_AUTHENTICATOR=externalbrowser
 
 # OpenAI
 OPENAI_API_KEY=your_openai_api_key
